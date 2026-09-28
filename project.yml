@@ -1,0 +1,57 @@
+name: WiFiMap
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    macOS: "15.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    MACOSX_DEPLOYMENT_TARGET: "15.0"
+    DEVELOPMENT_TEAM: 7RLDYXQTNX
+targets:
+  WiFiMap:
+    type: application
+    platform: macOS
+    sources: [WiFiMap]
+    info:
+      path: WiFiMap/Info.plist
+      properties:
+        CFBundleDisplayName: WiFiMap
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        LSApplicationCategoryType: public.app-category.utilities
+        NSLocationWhenInUseUsageDescription: WiFiMap needs Location Services to read the names (SSIDs) and hardware addresses (BSSIDs) of nearby Wi-Fi networks. Your location is never stored or sent anywhere.
+        NSLocationUsageDescription: WiFiMap needs Location Services to read the names (SSIDs) and hardware addresses (BSSIDs) of nearby Wi-Fi networks. Your location is never stored or sent anywhere.
+    entitlements:
+      path: WiFiMap/WiFiMap.entitlements
+      properties:
+        com.apple.security.personal-information.location: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.WiFiMap
+        MARKETING_VERSION: "0.1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        ENABLE_HARDENED_RUNTIME: YES
+        CODE_SIGN_STYLE: Manual
+        CODE_SIGN_IDENTITY: Apple Development
+  WiFiMapTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources: [WiFiMapTests]
+    dependencies:
+      - target: WiFiMap
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        CODE_SIGN_STYLE: Manual
+        CODE_SIGN_IDENTITY: Apple Development
+        TEST_HOST: $(BUILT_PRODUCTS_DIR)/WiFiMap.app/Contents/MacOS/WiFiMap
+        BUNDLE_LOADER: $(TEST_HOST)
+schemes:
+  WiFiMap:
+    build:
+      targets:
+        WiFiMap: all
+    test:
+      targets: [WiFiMapTests]
