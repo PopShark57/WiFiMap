@@ -21,6 +21,9 @@ open build/Build/Products/Debug/WiFiMap.app
 
 `WiFiMap.xcodeproj` is generated from `project.yml`, so edit `project.yml` rather than the project.
 
+The app icon is `WiFiMap/AppIcon.icon`, an Icon Composer document. Open it in Icon Composer
+(bundled with Xcode) to edit it.
+
 ## Notes
 
 - **Location Services is required.** macOS withholds SSIDs and BSSIDs from apps without it.

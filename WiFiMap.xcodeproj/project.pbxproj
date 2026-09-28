@@ -16,6 +16,7 @@
 		6971AA2B7487E6791ECCCCCD /* WiFiNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDB091A23DF16BB49344BF5 /* WiFiNetwork.swift */; };
 		75C636E1380989EAC0D82E45 /* NetworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C2198BFAE6120ADAC9F995 /* NetworkDetailView.swift */; };
 		864505ECB4DBA33F46B76CF8 /* LocationAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB52336D5E955B7C6555AD6D /* LocationAuthorization.swift */; };
+		8BB7027267E88BBA46D82905 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 413F9AB2EC4B209F47C9C988 /* AppIcon.icon */; };
 		8E39823219C5295155E352B9 /* WiFiScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBB4502B58F4279DFF64DA9 /* WiFiScanner.swift */; };
 		AE264B74CE2C48CA91FA43A8 /* WiFiMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E06A74ACAB05BE56BE6B076 /* WiFiMapApp.swift */; };
 		ED6481BE1B37B72DEAE77A6F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C032A40CEDFA03200698640F /* ContentView.swift */; };
@@ -36,6 +37,7 @@
 		1E06A74ACAB05BE56BE6B076 /* WiFiMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiMapApp.swift; sourceTree = "<group>"; };
 		2BBB4502B58F4279DFF64DA9 /* WiFiScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiScanner.swift; sourceTree = "<group>"; };
 		3651658C925F929F7E9071E1 /* NetworkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkListView.swift; sourceTree = "<group>"; };
+		413F9AB2EC4B209F47C9C988 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = wrapper.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 		52D16E6C2AB843380FE2FEE6 /* WiFiMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiFiMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54C2198BFAE6120ADAC9F995 /* NetworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDetailView.swift; sourceTree = "<group>"; };
 		5DD5EFA9AC37B00B5C03D707 /* ChannelMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelMath.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 		9425AAC79668D82F87C1ACFC /* WiFiMap */ = {
 			isa = PBXGroup;
 			children = (
+				413F9AB2EC4B209F47C9C988 /* AppIcon.icon */,
 				FB76A2C5D1CD4BA36C1F0F62 /* Info.plist */,
 				913D303F754B9353D07B68BC /* WiFiMap.entitlements */,
 				26EE9FFA6D60BC00691998B0 /* App */,
@@ -155,6 +158,7 @@
 			buildConfigurationList = C54D3F26E692A5BC96A9DF36 /* Build configuration list for PBXNativeTarget "WiFiMap" */;
 			buildPhases = (
 				645A52794BB1DB0D1FB165C9 /* Sources */,
+				11FC1C3C8573F1D585D47999 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -205,6 +209,17 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11FC1C3C8573F1D585D47999 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BB7027267E88BBA46D82905 /* AppIcon.icon in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		645A52794BB1DB0D1FB165C9 /* Sources */ = {
